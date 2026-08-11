@@ -9,10 +9,10 @@ from banco import cursor, conexao
 import sqlite3
 import threading
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'fcivil-tube-501812-q1-aae53e85c03b.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '.json'
 
-project_id = "civil-tube-501812-q1"
-subscription_id = "heythere"
+project_id ="SEU_PROJECT_ID_AQUI"
+subscription_id = "NOME_DA_SUA_INSCRICAO"
 subscriber = pubsub_v1.SubscriberClient()
 subscription_path = subscriber.subscription_path(project_id, subscription_id)
 
