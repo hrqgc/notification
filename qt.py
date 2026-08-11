@@ -907,14 +907,13 @@ class pubsubListener(QThread):
     def run(self):
         time.sleep(2)
         while True:
-            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'credentials/civil-tube-501812-q1-aae53e85c03b.json'
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'credentials.json'
 
-            project_id = "civil-tube-501812-q1"
-            subscription_id = "heythere"
+            project_id = "SEU_PROJECT_ID_AQUI"
+            subscription_id = "NOME_DA_SUA_INSCRICAO"
             print('[THREAD] iniciando conexao com o pubsub')
 
-            topicName = 'projects/civil-tube-501812-q1/topics/heythere'
-
+            topicName = f'projects/{project_id}/topics/NOME_DO_SEU_TOPICO'
             try:
                 gmail = Gmail(client_secret_file='credentials/client_secret.json', creds_file='credentials/gmail_token.json')
                 request = {
