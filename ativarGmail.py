@@ -25,7 +25,7 @@ def main():
 
 
     request_body = {
-        "topicName": "projects/civil-tube-501812-q1/topics/heythere",
+        "topicName": f'projects/{project_id}/topics/NOME_DO_SEU_TOPICO',
         "labelIds":["INBOX"]
     }
 
