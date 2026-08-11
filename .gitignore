@@ -1,0 +1,16 @@
+# Ignorar ambiente virtual
+.venv/
+
+# Ignorar banco de dados (dados sensíveis de clientes)
+database/
+base.db
+
+# Ignorar credenciais do Google
+credentials/
+*.json
+
+# Ignorar arquivos compilados do python e executáveis
+__pycache__/
+dist/
+build/
+*.spec
